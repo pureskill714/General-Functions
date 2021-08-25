@@ -1,0 +1,26 @@
+/*This function returns the largest number in an array.The function requires two parameters as input. First parameter is the array, second parameter is the number of 
+elements in that array*/
+
+int max(int list[],int numberOfElements){
+    for (int i= 0; i <numberOfElements; i++){
+        if (!(list[0] > list[i]))
+        {
+            list[0] = list[i];
+        }
+    }
+     return list[0];
+
+}
+
+
+int main(){
+
+int a[10] = {40,80,70,20,40,20,200,250,100,1};
+int highest;
+highest = max(a,10);
+printf("%d",highest);
+
+return 0;
+
+}
+
